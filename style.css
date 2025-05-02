@@ -6,11 +6,37 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-}
+    background-color: #1f2937;
+    color: #f9fafb;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    color: #1e3a8a;
+  }
+  
+  a {
+    color: #3b82f6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #2563eb;
+  }
+  
+  .projeto {
+    background-color: #ffffff;
+  }
+  
+  .botao-cv, .skills-list li {
+    background-color: #3b82f6;
+  }
+  
+  .botao-cv:hover, .skills-list li:hover {
+    background-color: #2563eb;
+  }
 
 header {
     background-color: #0077cc;
@@ -47,6 +73,60 @@ section h2 {
     font-size: 28px;
     color: #0077cc;
 }
+
+#sobre p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Habilidades */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.skills-list li:hover {
+    transform: scale(1.05);
+    background-color: #005fa3;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.projeto {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+  }
+  
+  .projeto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
 
 .projeto img {
     width: 100%;
